@@ -55,7 +55,10 @@ func main() {
 	// slackBotOAuth := ""
 	ngrok_app := fetch_ngrok_url("ngrok_app:4040")
 	ngrok_influx := fetch_ngrok_url("ngrok_influxdb:4040")
-
+	fmt.Println("-----------------------")
+	fmt.Println(ngrok_app)
+	fmt.Println(ngrok_influx)
+	fmt.Println("-----------------------")
 	json_data := map[string]interface{}{
 		"channel": "#url_manage",
 		"text":    "*App:* \n" + ngrok_app + "\n*Grafana:* \n" + ngrok_influx,
