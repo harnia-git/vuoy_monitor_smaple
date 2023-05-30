@@ -52,9 +52,10 @@ type SlackResponse struct {
 func main() {
 
 	slackBotOAuth := os.Getenv("SLACK_BOT_OAUTH")
-	// slackBotOAuth := ""
-	ngrok_app := fetch_ngrok_url("ngrok_app:4040")
-	ngrok_influx := fetch_ngrok_url("ngrok_influxdb:4040")
+	fmt.Println(slackBotOAuth)
+	// slackBotOAuth := ""	
+	ngrok_app := fetch_ngrok_url("localhost:4040")
+	ngrok_influx := fetch_ngrok_url("localhost:4041")
 	fmt.Println("-----------------------")
 	fmt.Println(ngrok_app)
 	fmt.Println(ngrok_influx)
