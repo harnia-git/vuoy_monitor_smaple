@@ -14,7 +14,7 @@ services:
         volumes:
             - ./db:/docker-entrypoint-initdb.d
             - ./db/data:/var/lib/influxdb2 \
-            - ./db/config:/etc/influxdb2 
+            #- ./db/config:/etc/influxdb2 
     app:
         build: ./app
         ports:

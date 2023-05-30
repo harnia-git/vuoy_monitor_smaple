@@ -54,8 +54,8 @@ func main() {
 	slackBotOAuth := os.Getenv("SLACK_BOT_OAUTH")
 	fmt.Println(slackBotOAuth)
 	// slackBotOAuth := ""	
-	ngrok_app := fetch_ngrok_url("localhost:4040")
-	ngrok_influx := fetch_ngrok_url("localhost:4041")
+	ngrok_app := fetch_ngrok_url("ngrok_app:4040")
+	ngrok_influx := fetch_ngrok_url("ngrok_influxdb:4040")
 	fmt.Println("-----------------------")
 	fmt.Println(ngrok_app)
 	fmt.Println(ngrok_influx)
